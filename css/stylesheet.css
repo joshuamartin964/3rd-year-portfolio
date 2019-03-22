@@ -3,6 +3,7 @@
     /*border: 1px solid red;*/
     --header-font: 'Roboto', sans-serif;
     --body-text: 'Montserrat', sans-serif;
+    --contact-header: 1.5em;
 }
 
 *, *:before, *:after {
@@ -101,12 +102,13 @@ nav a:hover::before {   /*HOVER EFFECT ON NAV BORDER*/
 /*ABOUT ME STYLING*/
 
 .about-me {
-    
+    margin: 0 10px;
 }
 
 .about-me-contain {
     float: left;
     width: auto;
+    margin: 0 10px;
 }
 
 .about-me-title {
@@ -121,7 +123,7 @@ nav a:hover::before {   /*HOVER EFFECT ON NAV BORDER*/
 /*IMAGE STYLING*/
 
 .pp-contain {
-    margin: auto 20%;
+    margin: auto 15%;
 }
 
 .profile-picture {
@@ -135,15 +137,16 @@ main{
 
 /*CONTACT SECTION STYLING*/
 
-/*CONTACT SECTION STYLING*/
-
 .contact-me {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     padding-bottom: 50px;
-    background: rgba(255, 255, 255, 0.979);
-    color: #008335;
+}
+
+.contact-title {
+    font-family: var(--header-font);
+    font-weight: 300;
 }
 
 .contact-info {
@@ -158,9 +161,12 @@ main{
 
 .contact-info > * {
     font-size: 18px;
-    line-height: 1.6em;
-    text-transform: uppercase;
+    line-height: 2em;
     letter-spacing: 1px;
+}
+
+.cmo {
+    font-size: var(--contact-header);
 }
 
 .icons {
@@ -181,8 +187,11 @@ main{
 .contact-form > * {
     font-size: 18px;
     line-height: 1.6em;
-    text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.git {
+    font-size: var(--contact-header);
 }
 
 .input, .msg .area{
@@ -212,7 +221,7 @@ main{
 
 .btn{
     width: 200px;
-    background: #008335;
+    background: #000;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -228,7 +237,7 @@ main{
 }
 
 ::-webkit-input-placeholder{
-    font-family: 'Roboto Mono', monospace, 'Roboto', sans-serif;
+    font-family: var(--body-text);
 }
 
 .social-icons {
